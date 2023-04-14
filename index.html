@@ -22,6 +22,11 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!-- .nav-open  class was added-->
@@ -35,11 +40,11 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#" class="main-nav-link">How it works</a></li>
-          <li><a href="#" class="main-nav-link">Meals</a></li>
-          <li><a href="#" class="main-nav-link">testimonials</a></li>
-          <li><a href="#" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#meal" class="main-nav-link">Meals</a></li>
+          <li><a href="#testimonial" class="main-nav-link">testimonials</a></li>
+          <li><a href="#price" class="main-nav-link">Pricing</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -68,7 +73,7 @@
             <a href="#" class="btn btn-full margin-right-sm"
               >Let's start eating</a
             >
-            <a href="#" class="btn btn-outline">Learn more &darr;</a>
+            <a href="#how" class="btn btn-outline">Learn more &darr;</a>
             <div class="delivered-meal">
               <div class="delivered-img">
                 <img
@@ -129,7 +134,7 @@
           </div>
         </div>
       </section>
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -194,7 +199,7 @@
           </div>
         </div>
       </section>
-      <section class="section-meals">
+      <section class="section-meals" id="meal">
         <div class="container text-center">
           <span class="subheading">Meals</span>
           <h2 class="heading-secondary">
@@ -310,7 +315,7 @@
           <a href="#" class="link">see all recipes &rarr;</a>
         </div>
       </section>
-      <section class="section-testimonials grid grid--2--cols">
+      <section class="section-testimonials grid grid--2--cols" id="testimonial">
         <div class="testimonial-container">
           <span class="subheading">testimonials</span>
           <h2 class="heading-secondary">Once u try it , u can't go back</h2>
@@ -452,7 +457,7 @@
           </figure>
         </div>
       </section>
-      <section class="section-pricing">
+      <section class="section-pricing" id="price">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -564,7 +569,7 @@
           </div>
         </div>
       </section>
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -644,7 +649,8 @@
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2027 by Omifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2027</span> by Omifood, Inc. All
+            rights reserved.
           </p>
         </div>
         <div class="address-col">
@@ -688,6 +694,5 @@
         </nav>
       </div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
